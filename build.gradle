@@ -31,6 +31,7 @@ repositories {
 dependencies {
     compile 'org.scala-lang:scala-library:2.12.3'
     compile 'fr.inria.gforge.spoon:spoon-core:5.9.0'
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
 }
 
 mainClassName = "org.snaptest.Main"

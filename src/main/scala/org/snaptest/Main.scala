@@ -1,16 +1,12 @@
 package org.snaptest
 
+import org.snaptest.gateway.commandline.CommandLineArgsProcessor
+import org.snaptest.processing.service.ProcessingFacade
+
 object Main {
 
   def main(args: Array[String]): Unit = {
-    lazy val heh = {
-      val nw = "new"
-      val prj = "project"
-      nw + prj
-    }
-    println(heh)
+    ProcessingFacade.process(CommandLineArgsProcessor.process(args))
   }
-
-
 
 }
