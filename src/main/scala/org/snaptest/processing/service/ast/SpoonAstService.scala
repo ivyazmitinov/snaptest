@@ -3,7 +3,7 @@ package org.snaptest.processing.service.ast
 import spoon.Launcher
 import spoon.reflect.CtModel
 
-object AstBuilder{
+class SpoonAstService{
 
   def build(pathToSource: String): CtModel = {
     val spoonLauncher = new Launcher()

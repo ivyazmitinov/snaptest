@@ -1,12 +1,14 @@
 package org.snaptest
 
-import org.snaptest.gateway.commandline.CommandLineArgsProcessor
-import org.snaptest.processing.service.ProcessingFacade
+import org.snaptest.processing.service.components.ComponentsRegistry
 
 object Main {
 
+  private val startService = ComponentsRegistry.startService
+  private val argsService = ComponentsRegistry.commandLineArgsService
+
   def main(args: Array[String]): Unit = {
-    ProcessingFacade.process(CommandLineArgsProcessor.process(args))
+    startService.start(argsService.buildAndValidateParams(args))
   }
 
 }
