@@ -1,4 +1,4 @@
-package org.snaptest.processing.data
+package org.snaptest.processing.start.data
 
 case class StartArguments(testFile: String) {
 

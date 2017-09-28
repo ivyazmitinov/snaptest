@@ -1,4 +1,4 @@
-package org.snaptest.gateway.commandline
+package org.snaptest.gateway.commandline.service
 
 import org.apache.commons.cli.CommandLine
 

@@ -1,7 +1,7 @@
-package org.snaptest.gateway.commandline
+package org.snaptest.gateway.commandline.service
 
 import org.apache.commons.cli.{DefaultParser, Option, Options}
-import org.snaptest.processing.data.StartArguments
+import org.snaptest.processing.start.data.StartArguments
 
 class DefaultCommandLineArgsService {
 

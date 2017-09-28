@@ -1,4 +1,4 @@
-package org.snaptest.processing.service.ast
+package org.snaptest.processing.ast.service
 
 import spoon.Launcher
 import spoon.reflect.CtModel

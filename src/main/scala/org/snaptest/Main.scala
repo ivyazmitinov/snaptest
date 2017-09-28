@@ -1,6 +1,6 @@
 package org.snaptest
 
-import org.snaptest.processing.service.components.ComponentsRegistry
+import org.snaptest.config.components.ComponentsRegistry
 
 object Main {
 

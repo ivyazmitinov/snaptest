@@ -1,7 +1,7 @@
-package org.snaptest.processing.service
+package org.snaptest.processing.start.service
 
-import org.snaptest.processing.data.StartArguments
-import org.snaptest.processing.service.ast.SpoonAstService
+import org.snaptest.processing.ast.service.SpoonAstService
+import org.snaptest.processing.start.data.StartArguments
 
 /**
   * Facade over all processing

@@ -1,8 +1,8 @@
-package org.snaptest.processing.service.components
+package org.snaptest.config.components
 
-import org.snaptest.gateway.commandline.DefaultCommandLineArgsService
-import org.snaptest.processing.service.DefaultStartService
-import org.snaptest.processing.service.ast.SpoonAstService
+import org.snaptest.gateway.commandline.service.DefaultCommandLineArgsService
+import org.snaptest.processing.ast.service.SpoonAstService
+import org.snaptest.processing.start.service.DefaultStartService
 
 object ComponentsRegistry extends CommandLineComponent
   with StartComponent
