@@ -4,7 +4,7 @@ import org.snaptest.config.components.ComponentsRegistry
 
 object Main {
 
-  private val startService = ComponentsRegistry.startService
+  private val startService = ComponentsRegistry.processingEntryPointService
   private val argsService = ComponentsRegistry.commandLineArgsService
 
   def main(args: Array[String]): Unit = {

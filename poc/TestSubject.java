@@ -1,6 +1,6 @@
 package org.snaptest;
 
-public class Main {
+public class TestSubject {
 
     public int testMethod(int param) {
         if (3 <= param && param <= 7) {

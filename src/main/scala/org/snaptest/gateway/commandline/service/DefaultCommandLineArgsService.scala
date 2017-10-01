@@ -1,7 +1,8 @@
 package org.snaptest.gateway.commandline.service
 
 import org.apache.commons.cli.{DefaultParser, Option, Options}
-import org.snaptest.processing.start.data.StartArguments
+import org.snaptest.gateway.commandline.service.CommandLineOptions._
+import org.snaptest.processing.entrypoint.data.StartArguments
 
 class DefaultCommandLineArgsService {
 
@@ -10,13 +11,18 @@ class DefaultCommandLineArgsService {
     *
     */
   def buildAndValidateParams(args: Array[String]): StartArguments = {
+
     val cmd = new DefaultParser().parse({
       val options = new Options()
       CommandLineOptions.allOptions.foreach((option: Option) => options.addOption(option))
       options
     }, args)
+
     CommandLineArgsValidator.validate(cmd)
-    StartArguments(testFile = cmd.getOptionValue("t"))
+
+    StartArguments(sourceFilePath = cmd.getOptionValue(SourcePathOption.getOpt),
+      classPath = cmd.getOptionValue(ClassPathOption.getOpt),
+      className = cmd.getOptionValue(ClassNameOption.getOpt))
   }
 
 }

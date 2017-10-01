@@ -1,21 +1,7 @@
 group 'snaptest'
 version '1.0'
 
-//buildscript {
-//    repositories {
-//        mavenLocal()
-//        mavenCentral()
-//    }
-//    dependencies {
-//        classpath group: 'fr.inria.gforge.spoon',
-//                name: 'spoon-gradle-plugin',
-//                version:'1.1'
-//    }
-//}
-//
-
 apply plugin: 'java'
-//apply plugin: 'spoon'
 apply plugin: 'scala'
 apply plugin: 'idea'
 apply plugin: 'application'
